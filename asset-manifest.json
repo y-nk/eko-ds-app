@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/eko-ds-app/static/css/main.cde6b8d6.chunk.css",
+    "main.js": "/eko-ds-app/static/js/main.f7c2ad85.chunk.js",
+    "main.js.map": "/eko-ds-app/static/js/main.f7c2ad85.chunk.js.map",
+    "runtime-main.js": "/eko-ds-app/static/js/runtime-main.7ab857a1.js",
+    "runtime-main.js.map": "/eko-ds-app/static/js/runtime-main.7ab857a1.js.map",
+    "static/js/2.92d42309.chunk.js": "/eko-ds-app/static/js/2.92d42309.chunk.js",
+    "static/js/2.92d42309.chunk.js.map": "/eko-ds-app/static/js/2.92d42309.chunk.js.map",
+    "index.html": "/eko-ds-app/index.html",
+    "precache-manifest.c1bc36c75421d2d1f3b471f9f9345cee.js": "/eko-ds-app/precache-manifest.c1bc36c75421d2d1f3b471f9f9345cee.js",
+    "service-worker.js": "/eko-ds-app/service-worker.js",
+    "static/css/main.cde6b8d6.chunk.css.map": "/eko-ds-app/static/css/main.cde6b8d6.chunk.css.map",
+    "static/js/2.92d42309.chunk.js.LICENSE": "/eko-ds-app/static/js/2.92d42309.chunk.js.LICENSE"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.7ab857a1.js",
+    "static/js/2.92d42309.chunk.js",
+    "static/css/main.cde6b8d6.chunk.css",
+    "static/js/main.f7c2ad85.chunk.js"
+  ]
+}
