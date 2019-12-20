@@ -1,0 +1,36 @@
+.app {
+  box-sizing: border-box;
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAAIElEQVQoU2P88OHDfwYiACNIIQsLC0GlowrxBhHRwQMAjJUmjWW+XhkAAAAASUVORK5CYII=) repeat;
+  border: .5em solid var(--theme);
+
+  --move: #3f51b5;
+  --edit: #ef4327;
+  --plan: #00cd82;
+}
+
+.app.move {
+  --theme: var(--move);
+}
+
+.app.edit {
+  --theme: var(--edit);
+}
+
+.app.plan {
+  --theme: var(--plan);
+}
+
+.app .title {
+  position: absolute;
+  left: -.25em;
+  top: -.25em;
+}
+
+.app .router {
+  width: 100%;
+  height: 100%;
+}

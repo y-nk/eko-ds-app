@@ -1,0 +1,9 @@
+.title {
+  z-index: 10;
+  display: inline-block;
+  margin: 0;
+  padding: .5em 1em;
+  background: var(--theme);
+  font-size: 1.5em;
+  color: #fff;
+}

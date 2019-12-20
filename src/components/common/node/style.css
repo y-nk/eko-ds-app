@@ -1,0 +1,98 @@
+.node {
+  z-index: 1;
+  position: relative;
+  cursor: pointer;
+}
+
+.node.active {
+  z-index: 2;
+}
+
+.node foreignObject {
+  x: -40px;
+  y: -40px;
+  width: 80px;
+  height: 80px;
+}
+
+.node div {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 50%;
+  height: 50%;
+  transform: translate(-50%, -50%);
+  background: var(--theme);
+  border-radius: 50%;
+  box-shadow: 0 0 .5em -.25em rgba(0, 0, 0, .6);
+  user-select: none;
+  color: #fff;
+  transition: background .3s, box-shadow .3s, transform .3s;
+}
+
+.node.move {
+  cursor: grab;
+}
+
+.node.move.dragging {
+  cursor: grabbing;
+}
+
+.node.move:hover div {
+  box-shadow: 0 0 .25em .125em rgba(0, 0, 0, .2);
+  transform: translate(-50%, -50%) scale(1.0625);
+}
+
+.node.move.dragging div {
+  box-shadow: 0 0 .5em .125em rgba(0, 0, 0, .2);
+  transform: translate(-50%, -50%) scale(1.125);
+}
+
+.node.edit .delete {
+  position: absolute;
+  opacity: 0;
+}
+
+.node.edit:hover .delete {
+  opacity: 1;
+}
+
+.node.edit .hook {
+  position: absolute;
+  display: block;
+  left: 50%;
+  top: 50%;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+.node.edit .hook:after {
+  content: '';
+  position: absolute;
+  width: .8em;
+  height: .8em;
+  background: #333;
+  border-radius: .8em;
+  transform: translate(-50%, -50%);
+}
+
+.node.edit div:hover .hook,
+.node.edit.active .hook {
+  opacity: 1;
+}
+
+.node.edit div:focus-within .hook {
+  opacity: 0;
+}
+
+.node.plan div {
+  background: #888;
+}
+
+.node.plan.active div {
+  background: var(--theme);
+}

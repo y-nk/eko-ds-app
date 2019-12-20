@@ -1,0 +1,90 @@
+.edge {
+  cursor: pointer;
+  user-select: none;
+}
+
+.edge line {
+  stroke: #ccc;
+  stroke-dasharray: 4;
+  stroke-width: 2;
+}
+
+.edge polygon {
+  fill: #ccc;
+}
+
+.edge foreignObject {
+  x: -30px;
+  y: -30px;
+  width: 60px;
+  height: 60px;
+}
+
+.edge foreignObject > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 40%;
+  height: 35%;
+  background: #777;
+  border-radius: 2px;
+  color: #eee;
+  font-size: .8em;
+  transform: translate(-50%, -50%);
+}
+
+.edge.move {
+  cursor: grab;
+}
+
+.edge.move.dragging {
+  cursor: grabbing;
+}
+
+.edge.edit .delete {
+  position: absolute;
+  opacity: 0;
+}
+
+.edge.edit foreignObject:hover .delete {
+  opacity: 1;
+}
+
+
+.edge.plan {
+  opacity: .5;
+}
+
+.edge.plan line {
+  stroke: #555;
+}
+
+.edge.plan polygon {
+  fill: #555;
+}
+
+.edge.plan.highlight line {
+  animation: dash 1s linear infinite;
+}
+
+.edge.plan.selected {
+  opacity: 1;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -50;
+  }
+}
+
+.edge.selected line {
+  stroke: var(--theme);
+  stroke-dasharray: 0;
+}
+
+.edge.selected polygon {
+  fill: var(--theme);
+}

@@ -1,0 +1,21 @@
+.delete {
+  display: inline-block;
+  bottom: 75%;
+  left: 75%;
+  padding: .125em;
+  background-color: #cc0f00;
+  border-radius: 100% 100% 100% .5em;
+  box-shadow: 0 0 .25em -.125em rgba(0, 0, 0, 1);
+  color: #fff;
+  transition: opacity .3s, background-color .3s;
+}
+
+.delete:hover {
+  background:#ee0f00;
+}
+
+.delete > svg {
+  display: block;
+  width: 16px;
+  height: 16px;
+}

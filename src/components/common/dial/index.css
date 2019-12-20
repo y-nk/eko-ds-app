@@ -1,0 +1,11 @@
+.dial {
+  z-index: 3;
+  position: absolute;
+  right: 1.5em;
+  bottom: 1.5em;
+}
+
+.dial .MuiFab-primary, .dial .MuiFab-primary:hover {
+  background-color: var(--theme);
+  transition: background-color .3s;
+}

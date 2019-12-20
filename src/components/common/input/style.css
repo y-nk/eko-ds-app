@@ -1,0 +1,16 @@
+.input {
+  display: block;
+  width: 60%;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid currentColor;
+  color: inherit;
+  font-size: 1em;
+  text-align: center;
+  outline: none;
+  transition: border-color .3s;
+}
+
+.input[readonly] {
+  border-color: transparent;
+}

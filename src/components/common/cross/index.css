@@ -1,0 +1,4 @@
+.cross line {
+  stroke: var(--theme);
+  stroke-width: 1;
+}
